@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6415979927E0836300F412F2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6415979827E0836300F412F2 /* Kingfisher */; };
+		6415979B27E0840F00F412F2 /* SwiftyDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6415979A27E0840F00F412F2 /* SwiftyDrawViewController.swift */; };
+		6415979E27E0865900F412F2 /* SwiftyDraw in Frameworks */ = {isa = PBXBuildFile; productRef = 6415979D27E0865900F412F2 /* SwiftyDraw */; };
+		641597A127E0B5FC00F412F2 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 641597A027E0B5FC00F412F2 /* Algorithms */; };
 		6499500D27DC413C00E533FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499500C27DC413C00E533FB /* AppDelegate.swift */; };
 		6499500F27DC413C00E533FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499500E27DC413C00E533FB /* SceneDelegate.swift */; };
 		6499501127DC413C00E533FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499501027DC413C00E533FB /* ViewController.swift */; };
@@ -16,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6415979627E080E600F412F2 /* packages.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = packages.playground; path = ../../packages.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6415979A27E0840F00F412F2 /* SwiftyDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDrawViewController.swift; sourceTree = "<group>"; };
 		6499500927DC413C00E533FB /* Figma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6499500C27DC413C00E533FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6499500E27DC413C00E533FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641597A127E0B5FC00F412F2 /* Algorithms in Frameworks */,
+				6415979E27E0865900F412F2 /* SwiftyDraw in Frameworks */,
+				6415979927E0836300F412F2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +65,11 @@
 		6499500B27DC413C00E533FB /* Figma */ = {
 			isa = PBXGroup;
 			children = (
+				6415979627E080E600F412F2 /* packages.playground */,
 				6499500C27DC413C00E533FB /* AppDelegate.swift */,
 				6499500E27DC413C00E533FB /* SceneDelegate.swift */,
 				6499501027DC413C00E533FB /* ViewController.swift */,
+				6415979A27E0840F00F412F2 /* SwiftyDrawViewController.swift */,
 				6499501227DC413C00E533FB /* Main.storyboard */,
 				6499501527DC413D00E533FB /* Assets.xcassets */,
 				6499501727DC413D00E533FB /* LaunchScreen.storyboard */,
@@ -83,6 +94,11 @@
 			dependencies = (
 			);
 			name = Figma;
+			packageProductDependencies = (
+				6415979827E0836300F412F2 /* Kingfisher */,
+				6415979D27E0865900F412F2 /* SwiftyDraw */,
+				641597A027E0B5FC00F412F2 /* Algorithms */,
+			);
 			productName = Figma;
 			productReference = 6499500927DC413C00E533FB /* Figma.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,11 @@
 				Base,
 			);
 			mainGroup = 6499500027DC413C00E533FB;
+			packageReferences = (
+				6415979727E0836300F412F2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6415979C27E0865900F412F2 /* XCRemoteSwiftPackageReference "SwiftyDraw" */,
+				6415979F27E0B5FC00F412F2 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 6499500A27DC413C00E533FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +161,7 @@
 			files = (
 				6499501127DC413C00E533FB /* ViewController.swift in Sources */,
 				6499500D27DC413C00E533FB /* AppDelegate.swift in Sources */,
+				6415979B27E0840F00F412F2 /* SwiftyDrawViewController.swift in Sources */,
 				6499500F27DC413C00E533FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +382,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6415979727E0836300F412F2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		6415979C27E0865900F412F2 /* XCRemoteSwiftPackageReference "SwiftyDraw" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Awalz/SwiftyDraw";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		6415979F27E0B5FC00F412F2 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6415979827E0836300F412F2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6415979727E0836300F412F2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6415979D27E0865900F412F2 /* SwiftyDraw */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6415979C27E0865900F412F2 /* XCRemoteSwiftPackageReference "SwiftyDraw" */;
+			productName = SwiftyDraw;
+		};
+		641597A027E0B5FC00F412F2 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6415979F27E0B5FC00F412F2 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6499500127DC413C00E533FB /* Project object */;
 }

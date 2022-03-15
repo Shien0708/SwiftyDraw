@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "healthRecordsIcon.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "scale" : "2x",
+      "idiom" : "universal",
+      "filename" : "healthRecordsIcon@2x.png"
+    },
+    {
+      "filename" : "healthRecordsIcon@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
